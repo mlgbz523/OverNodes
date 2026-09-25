@@ -2,9 +2,8 @@ name: cf-overscan-gitee
 displayName: Cloudflare 节点自动测速与同步
 
 triggers:
-  schedule:
-    # 每天凌晨 4 点运行一次 (UTC 20:00)
-    - cron: '0 20 * * *'
+  # schedule:
+  #   - cron: '0 20 * * *'  # 定时已关闭（Gitee 国内环境测速受阻）
   push:
     branches:
       - main
