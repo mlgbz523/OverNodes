@@ -1,0 +1,46 @@
+name: Cloudflare 节点自动测速与同步
+
+on:
+  schedule:
+    # 每天北京时间凌晨 04:00 (UTC 20:00) 定时执行
+    - cron: '0 20 * * *'
+  workflow_dispatch: # 支持网页端手动一键点击运行
+
+jobs:
+  scan-and-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 设置 Python 运行环境
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: 安装必要依赖
+        run: |
+          pip install aiohttp
+
+      - name: 执行 Cloudflare 节点测速
+        run: |
+          python src/cf_overscan.py --limit 50 --domain 98k2887114514.28870721.xyz
+
+      - name: 提交更新到 GitHub
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add overNode*.txt ips_cfOverScan*.txt
+          git commit -m "Auto: GitHub Actions 定时更新优选节点 [skip ci]" || echo "无新节点变更"
+          git push origin HEAD:main
+
+      - name: 同步推送到 Gitee 镜像仓库 (若配置了凭据)
+        env:
+          GITEE_TOKEN: ${{ secrets.GITEE_TOKEN }}
+        run: |
+          if [ -n "$GITEE_TOKEN" ]; then
+            git push https://oauth2:${GITEE_TOKEN}@gitee.com/ggbodMlgbz/OverNodes.git HEAD:main --force || echo "Gitee 同步跳过"
+          fi
