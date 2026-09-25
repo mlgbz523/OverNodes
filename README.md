@@ -1,14 +1,10 @@
-- [https://raw.githubusercontent.com/mlgbz523/OverNodes/main/overNode_chain.txt](https://raw.githubusercontent.com/mlgbz523/OverNodes/main/overNode_chain.txt)  
-  [https://ghfast.top/https://raw.githubusercontent.com/mlgbz523/OverNodes/main/overNode_chain.txt](https://ghfast.top/https://raw.githubusercontent.com/mlgbz523/OverNodes/main/overNode_chain.txt)
+﻿# OverNodes-Gitee
 
-- [https://raw.githubusercontent.com/mlgbz523/OverNodes/main/overNode_actions.txt](https://raw.githubusercontent.com/mlgbz523/OverNodes/main/overNode_actions.txt)  
-  [https://ghfast.top/https://raw.githubusercontent.com/mlgbz523/OverNodes/main/overNode_actions.txt](https://ghfast.top/https://raw.githubusercontent.com/mlgbz523/OverNodes/main/overNode_actions.txt)
+Cloudflare 优选节点库 (Gitee 专属公开分发订阅)
 
-- [https://raw.githubusercontent.com/mlgbz523/OverNodes/main/socks5.txt](https://raw.githubusercontent.com/mlgbz523/OverNodes/main/socks5.txt)  
-  [https://ghfast.top/https://raw.githubusercontent.com/mlgbz523/OverNodes/main/socks5.txt](https://ghfast.top/https://raw.githubusercontent.com/mlgbz523/OverNodes/main/socks5.txt)
+## 订阅地址 (国内免梯直连高速拉取)
 
-- [https://raw.githubusercontent.com/mlgbz523/OverNodes/main/overNode.txt](https://raw.githubusercontent.com/mlgbz523/OverNodes/main/overNode.txt)  
-  [https://ghfast.top/https://raw.githubusercontent.com/mlgbz523/OverNodes/main/overNode.txt](https://ghfast.top/https://raw.githubusercontent.com/mlgbz523/OverNodes/main/overNode.txt)
+- **主力节点**: https://gitee.com/ggbodMlgbz/OverNodes-Gitee/raw/main/overNode_gitee.txt
+- **链式节点**: https://gitee.com/ggbodMlgbz/OverNodes-Gitee/raw/main/overNode_gitee_chain.txt
+- **SOCKS5 代理**: https://gitee.com/ggbodMlgbz/OverNodes-Gitee/raw/main/socks5_gitee.txt
 
-- [https://raw.githubusercontent.com/mlgbz523/OverNodes/main/ACL4SSR_Custom_Advanced.ini](https://raw.githubusercontent.com/mlgbz523/OverNodes/main/ACL4SSR_Custom_Advanced.ini)  
-  [https://ghfast.top/https://raw.githubusercontent.com/mlgbz523/OverNodes/main/ACL4SSR_Custom_Advanced.ini](https://ghfast.top/https://raw.githubusercontent.com/mlgbz523/OverNodes/main/ACL4SSR_Custom_Advanced.ini)
